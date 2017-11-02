@@ -1,0 +1,38 @@
+.page-body{
+    text-align: center;
+    min-height: 90%;
+}
+
+.page-body h1{
+    
+}
+
+.service-body{
+  text-align: left;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  padding: 0px 0px 50px 0px;
+  line-height: 25px;
+  margin-top: 4em;
+}
+
+.service-images{
+  margin-top: 4em;
+  display: inline-block;
+}
+
+.feature-full{
+  padding-top: 20px;
+}
+
+.feature-img{
+  width: 33%;
+  height: 260px;
+}
+
+@media(max-width: 850px){  
+  .feature-img{   
+    width: 100%;
+    height: auto;
+  }
+}

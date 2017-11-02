@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*Node module css imports*/
+@import 'normalize.css/normalize.css';
+@import 'hamburgers/dist/hamburgers.css';
+
+/*Site specific css imports*/
+@import 'partials/defaults.css';
+@import 'partials/footer.css';
+@import 'partials/hero.css';
+@import 'partials/layout.css';
+@import 'partials/service.css';
+@import 'partials/home.css';
+@import 'partials/aboutHero.css';
+@import 'partials/slider.css';
+
+@custom-media --monitor-up (min-width:1500px);
+@custom-media --desktop-down (max-width:1100px);
+@custom-media --desktop-up (min-width:1100px);
+@custom-media --tablet-down (max-width:850px);
+@custom-media --tablet-up (min-width:850px);
+@custom-media --phone-down (max-width:550px);
+@custom-media --phone-up (min-width:550px);
+
+/*CSS Variable declarations*/
+:root {
+  /*--dark-grey:#777777;*/
+}
+
+/*Breakpoints for postcss-custom-media*/
+/*@custom-media --desktop-up (min-width:1100px);*/

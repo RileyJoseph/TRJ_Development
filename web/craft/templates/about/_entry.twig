@@ -1,0 +1,41 @@
+{% extends "_layout" %}
+{% set title = "Cedar Tree Removal" %}
+{% set blockImage = {
+ mode: 'crop',
+ width: 440,
+ position: 'top-center'
+} %}
+{% block content %}
+
+{% include 'page-parts/_aboutHero.html' %}
+
+<div class="page-content">
+    <div class="col-md-12 page-body">
+        <h1 class="body-title">{{entry.title}}</h1>
+    </div>
+    <div class="col-md-12 page-body">    
+        <div class="col-md-3">
+        </div>
+        <div class="col-md-6 left">
+            <p>{{ entry.body }}</p>
+        </div>
+        <div class="col-md-3">
+        </div>
+    </div>
+
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-8 service-images service-slider">
+            {% for image in entry.serviceImages %}
+                <img class="" src="{{ image.getUrl(blockImage) }}">
+            {% endfor %}
+        </div>
+<!--         <div class="col-md-4 service-images">
+            <img class="" src="/assets/images/fd5.jpg">
+            <img class="" src="/assets/images/cleared2.jpg">
+        </div> -->
+        <div class="col-md-2">
+        </div>
+    </div>
+</div>
+{% endblock %}

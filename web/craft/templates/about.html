@@ -1,0 +1,44 @@
+{% extends "_layout" %}
+{% set title = "About" %}
+
+{% block content %}
+    <h1>About</h1>
+
+    {% for entry in craft.entries.section('news').find() %}
+        <article>
+            <h3><a href="{{ entry.url }}">{{ entry.title }}</a></h3>
+            <p>Posted on {{ entry.postDate.format('F d, Y') }}</p>
+            {{ entry.body.getPage(1) }}
+            <p><a href="{{ entry.url }}">Continue reading</a></p>
+        </article>
+    {% endfor %}
+    <div class="">
+    <div class="col-md-12 backgroundfooter">
+            
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-3 contact">
+            <h3>Contact Us</h3>
+            <ul>
+            <li>{{sitewideOptions.contactPhone}}</li>
+            <li>{{sitewideOptions.contactEmail}}</li>
+            <li>{{sitewideOptions.contactAddress}}</li>
+            </ul>
+        </div>
+        <div class="body col-md-4 ">
+            <h1 class="footer-title">TRJ Ranch
+            </h1>
+        </div>
+        <div class="body right col-md-3">
+            <ul class="contact">
+                <i class="center footer-title fa fa-facebook fa-2x" aria-hidden="true"></i>&nbsp &nbsp
+                <i class="center footer-title fa fa-youtube fa-2x" aria-hidden="true"></i>&nbsp &nbsp
+                <i class="center footer-title fa fa-instagram fa-2x" aria-hidden="true"></i>&nbsp &nbsp
+                <i class="center footer-title fa fa-twitter fa-2x" aria-hidden="true"></i>
+            </ul>
+        </div>
+        <div class="col-md-1">
+        </div>
+    </div>
+</div>
+{% endblock %}

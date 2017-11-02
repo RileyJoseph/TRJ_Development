@@ -1,0 +1,11 @@
+.slide{
+    position: relative;
+    display: block;
+}
+
+.slider-img{
+    width: 100%;
+    img{
+        width: 100%;
+    }
+}

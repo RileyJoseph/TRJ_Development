@@ -1,0 +1,124 @@
+.page-content{
+    min-height: 100%;
+    margin-bottom: -50px;
+}
+
+.page-content:after{
+    content: "";
+    display: block;
+}
+
+footer{
+    background-color: black;
+    color: rgba(255,255,255,.9);
+    display: inline-block;
+}
+
+.footer-content{
+    padding: 0em 2em;
+}
+
+.footer-left{
+    width: 33%;
+    float: left;
+}
+
+.footer-center{
+    width: 33%;
+    display: inline-block;
+    float: left;
+}
+
+.footer-right{
+    float: right;
+    width: 33%;
+}
+
+footer p{
+    padding-top: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contact{
+    color: white;
+}
+
+.contact ul{
+    list-style: none;
+    padding-left: 0px;
+    line-height: 24px;
+}
+
+.footer-title{
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 24px;
+    letter-spacing: 3px;
+    line-height: 42px;
+    margin-bottom: .5rem;
+    color: white;
+    font-weight: 400;
+    width: 100%;
+    text-align: center;
+    float: left;
+    display: inline-block;
+}
+
+
+.backgroundfooter{
+    background-color: #565656;
+    margin-top: 10em;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    float: right;
+    display: block;
+}
+
+.social{
+    float: right;
+    margin-top: 2em;
+}
+
+.social-icon{
+    padding: 10px;
+}
+
+.social--facebook{
+    background-image: svg('Facebook.svg', "[fill]: #ffffff");
+    width: 1em;
+    height: 1em;
+    margin-right: 1em;
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+}
+
+.social--youtube{
+    background-image: svg('Youtube.svg', "[fill]: #ffffff");
+    width: 1em;
+    height: 1em;
+    background-size: cover;
+    display: inline-block;
+    background-position: center;
+}
+
+@media screen and (max-width: 650px) { 
+    .footer-left{
+        display: none;
+    }
+    .footer-center{
+        width: 49%;
+        float: left;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 450px) { 
+    .footer-center{
+        width: 40%;
+    }
+    .social-icon{
+        padding: 0px;
+    }
+}

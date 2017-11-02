@@ -1,0 +1,70 @@
+.carousel{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.car-img{
+  width: 100%;
+}
+
+.title{
+  width: 100%;
+  top: 25%;
+  z-index: 2;
+  color: white;
+  position: absolute;
+}
+
+.title h1{
+    width: 100%;
+    font-size: 6em;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    position: absolute;
+    /*top: 55%;*/
+    min-height: 80px;
+}
+
+.title-fa{
+    position: absolute;
+    width: 100%;
+    padding-top: 100px;
+    z-index: 3;
+    text-align: center;
+    color: white;
+}
+
+@media(max-width: 850px){
+  .car-img{
+    /*height: 825px;*/
+    /*width: auto;*/
+  }
+}
+
+@media(max-width: 1000px){
+  .title{
+    top: 20%;
+  }
+}
+
+@media(max-width: 770px){
+    .title h1{
+      font-size: 4em;
+    }
+    .title{
+      top: 15%;
+    }
+    .title-fa{
+      display: none!important;
+    }
+}
+
+@media(max-width: 550px){
+    .title h1{
+      font-size: 3em;
+    }
+    .title{
+      top: 10%;
+    }
+}

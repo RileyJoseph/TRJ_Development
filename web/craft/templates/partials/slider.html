@@ -1,0 +1,6 @@
+{% for img in entry.serviceImages %}
+  {% set transformedImage = craft.imager.transformImage(img, { width: 450, height: 250 }) %}
+  <span class="slider-img">
+    <img src="{{ transformedImage.getUrl() }}">
+  </span>
+{% endfor %}

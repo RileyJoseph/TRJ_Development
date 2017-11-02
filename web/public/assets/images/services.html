@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:8888/ -->
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" style="background-color: rgb(215, 206, 199);"><screenshader><style>body::-webkit-scrollbar{width:0px !important;height:0px !important;}</style><div style="display: none; z-index: 2147483647; position: fixed; bottom: 0px; left: 0px; width: 100%; height: 17px; overflow-x: scroll;"><div style="height:10px;width:10px;margin:0;padding:0;"></div></div><div style="display: none; z-index: 2147483647; position: fixed; top: 0px; right: 0px; height: 100%; width: 17px; overflow-y: scroll;"><div style="height:10px;width:10px;margin:0;padding:0;"></div></div><!--This is an element that contains all the html for the screen shader extension to work--><div id="mainScreenShader" style="transition: opacity 0.1s; z-index: 2147483647; margin: 0px; border-radius: 0px; padding: 0px; background: rgba(255, 147, 41, 0); pointer-events: none; position: fixed; top: -10%; right: -10%; width: 120%; height: 120%; opacity: 1; mix-blend-mode: multiply; display: none;"><div id="SSdarkdim" style="width: 100%; height: 100%; max-width: 1000%; max-height: 1000%; position: absolute; top: 0px; left: 0px; z-index: 2147483647; margin: 0px; border-radius: 0px; padding: 0px; background: black; opacity: 0; display: none;"></div></div><div id="fullscreenmodehoverdetector" style="z-index: 2147483647; background-image: none; border-radius: 0px; padding: 0px; position: fixed; top: 0px; left: -20px; width: 150%; height: 10px; margin: 0px !important; display: none;"></div> <style>screenshader * {max-height: none !important;max-width: none !important;}@media print {screenshader{display:none;}} .disable-hover, .disable-hover * { pointer-events: none !important; -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }</style><style></style><style>*[ssmovebehindz]{z-index:2147483646!important;}</style></screenshader><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>TRJ Development</title>
+	<link rel="home" href="http://localhost/">
+
+	<style type="text/css">
+		body { margin: 50px; font-family: sans-serif; background: #fff; }
+		#container { margin: 0 auto; width: 700px;
+			-webkit-box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+			        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+		}
+
+		#header, #footer { display: block; color: #fff; background: #da5a47; }
+		#header a, #footer a { color: #fff; }
+		#header { border-radius: 7px 7px 0 0; padding: 25px; }
+		#header:after { content: '.'; display: block; height: 0; clear: both; visibility: hidden; }
+		#header a { text-decoration: none; }
+		#header h1 { float: left; margin: 0; font-weight: normal; font-size: 30px; line-height: 1; }
+		#header nav { display: block; float: right; }
+		#header nav ul { margin: 0; list-style-type: none; }
+		#header nav ul li { float: left; margin-left: 20px; }
+		#header nav ul li a { display: block; margin-top: 4px; line-height: 22px; }
+		#header nav ul li a:hover,
+		#header nav ul li a.active { border-bottom: 2px solid #fff; }
+		#header nav ul li a.active { cursor: default; }
+
+		#content { display: block; padding: 25px; background: #fff; }
+		#content h1 { margin-top: 0; font-size: 35px; font-weight: bold; }
+		#content a { color: #da5a47; text-decoration: none; }
+		#content a:hover { text-decoration: underline; }
+
+		#footer { border-radius: 0 0 7px 7px; padding: 15px; font-size: 12px; text-align: center; }
+	</style>
+	<link rel="stylesheet" href="./services_files/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./services_files/_site_header.css">
+	<link rel="stylesheet" type="text/css" href="./services_files/layouts.css">
+	<link rel="stylesheet" type="text/css" href="./services_files/slick.css">
+	<link rel="stylesheet" type="text/css" href="./services_files/slick-theme.css">
+	<link rel="stylesheet" type="text/css" href="./services_files/home.css">
+	<link rel="stylesheet" type="text/css" href="./services_files/service.css">
+	<link rel="stylesheet" type="text/css" href="./services_files/footer.css">
+	<link rel="stylesheet" href="./services_files/font-awesome.min.css">
+	<!-- FONTS -->
+	<link href="./services_files/css" rel="stylesheet">
+
+<style>@media print {#ghostery-purple-box {display:none !important}}</style></head>
+<body>
+
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost:8888/">TRJ - Land Preservation</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://localhost:8888/services/land-clearing">Land Clearing</a></li>
+        <li class=""><a href="http://localhost:8888/services/cedar-tree-removal">Cedar Tree Removal and Harvest <span class="sr-only">(current)</span></a></li>
+        <li><a href="http://localhost:8888/services/custom-saw-milling">Custom Saw Milling</a></li>
+        <li class="dropdown">
+          <a href="http://localhost:8888/#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Learn More <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="http://localhost:8888/about/about-us">About Us</a></li>
+            <li><a href="http://localhost:8888/about/the-cedar-tree-problem">The Cedar Tree Problem</a></li>
+            <li><a href="http://localhost:8888/about/benefits">Benefits</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://localhost:8888/#">Videos</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="http://localhost:8888/#">Gallery</a></li>
+          </ul>
+        </li>
+      </ul>
+
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+	<div class="page-content">
+<div class="title row">
+    <h1 class="">RECLAIM YOUR LAND</h1><br>
+    <a class="" href="http://localhost:8888/#home-body"><i class="title-fa fa fa-angle-double-down fa-3x center" aria-hidden="true"></i></a>
+</div>
+
+<div class="carousel slick-initialized slick-slider slick-dotted" role="toolbar">
+            <div aria-live="polite" class="slick-list draggable" style="height: 800px;"><div class="slick-track" role="listbox" style="opacity: 1; width: 6324px; transform: translate3d(-1581px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1" style="width: 1581px;">
+            <img src="./services_files/fdc3.jpg">
+        </div><div class="slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 1581px;">
+            <img src="./services_files/robertHouse12.jpg">
+        </div><div class="slick-slide" data-slick-index="1" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01" style="width: 1581px;">
+            <img src="./services_files/fdc3.jpg">
+        </div><div class="slick-slide slick-cloned" data-slick-index="2" aria-hidden="true" tabindex="-1" style="width: 1581px;">
+            <img src="./services_files/robertHouse12.jpg">
+        </div></div></div>
+            
+    <ul class="slick-dots" style="display: block;" role="tablist"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01" class=""><button type="button" data-role="none" role="button" tabindex="0">2</button></li></ul></div>  <!-- <div><img src="assets/images/robertHouse12.JPG"></div> -->
+  <!-- <div><img src="assets/images/fdc3.JPG"></div> -->
+
+
+<div id="home-body" class="col-md-12">
+    <h1 class="body-title">TRJ Ranch</h1>
+    <div class="col-md-3">
+    </div>
+    <div class="body col-md-6">
+    <h3 class="body-subtitle">We cut. We clear. We custom mill. You build.</h3>
+        <p>We work with you, the Oklahoma Landowner, to tackle the environmental and safety challenges of the cedar tree infestation and the displacement of our native agriculture, recreational and wildlife conservation land.  Land has always been and will always be one of Our Greatest Investments. Our job is to help you preserve your investment both for you and your family for many years to come. To do so, we will utilize the best equipment and Oklahoma grit to get the job done right. And yes, we can harvest and mill your trees into beautiful custom lumber!</p>
+        <a href="http://localhost:8888/about/about-us"><p class="right">Learn more about who we are.</p></a>
+    </div>
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-12">
+        <hr>
+    </div>
+    <div class="col-md-12">
+    <h1 class="body-title">Services</h1>
+        <div class="col-md-4 col-sm-12 sub-carousel">
+            <a href="http://localhost:8888/services/cedar-tree-removal"><img class="before" src="./services_files/beforeMachine1.jpg"></a>
+            <img class="after" src="./services_files/cleared4.jpg">
+            <h4>Cedar Tree Removal</h4>
+        </div>
+        <div class="col-md-4 col-sm-12 sub-carousel">
+            <a href="http://localhost:8888/services/custom-saw-milling"><img class="" src="./services_files/lumber23.jpg"></a>
+            <h4>Custom Saw Milling</h4>
+        </div>
+        <div class="col-md-4 col-sm-12 sub-carousel">
+            <a href="http://localhost:8888/services/land-clearing"><img class="" src="./services_files/action1.jpg"></a>
+            <h4>Land Clearing</h4>
+        </div>
+
+    </div>
+    <div class="col-md-12">
+    <h1 class="body-title">Learn More</h1>
+        <div class="col-md-4 col-sm-12 sub-carousel">
+            <a href="http://localhost:8888/about/about-us"><img class="before" src="./services_files/robertShed1.jpg"></a>
+            <img class="after" src="./services_files/cleared4.jpg">
+            <h4>About Us</h4>
+        </div>
+        <div class="col-md-4 col-sm-12 sub-carousel">
+            <a href="http://localhost:8888/about/the-cedar-tree-problem"><img class="" src="./services_files/cedar2.jpg"></a>
+            <h4>The Cedar Tree Problem</h4>
+        </div>
+        <div class="col-md-4 col-sm-12 sub-carousel">
+            <a href="http://localhost:8888/about/benefits"><img class="" src="./services_files/action1.jpg"></a>
+            <h4>Benefits</h4>
+        </div>
+
+    </div>
+</div>
+</div>  
+<!-- <div class="row footer">
+    <div class="footer-copywrite">
+        <p>Copywrite © TRJ Ranch 2017</p>
+    </div>
+</div> -->
+
+
+	<div class="col-md-12 backgroundfooter">    
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-3 contact">
+        <h3>Contact Us</h3>
+        <ul>
+        <li>405-834-6051</li>
+        <li>solutionsformedicine@yahoo.com</li>
+        <li>1234 Address Farmlane**</li>
+        </ul>
+    </div>
+    <div class="body col-md-4 ">
+        <h1 class="footer-title">TRJ Ranch
+        </h1>
+    </div>
+    <div class="body right col-md-3">
+        <ul class="contact">
+            <i class="center footer-title fa fa-facebook fa-2x" aria-hidden="true"></i>&nbsp; &nbsp;
+            <i class="center footer-title fa fa-youtube fa-2x" aria-hidden="true"></i>&nbsp; &nbsp;
+            <i class="center footer-title fa fa-instagram fa-2x" aria-hidden="true"></i>&nbsp; &nbsp;
+            <i class="center footer-title fa fa-twitter fa-2x" aria-hidden="true"></i>
+        </ul>
+    </div>
+    <div class="col-md-1">
+    </div>
+</div>
+
+	<script src="./services_files/jquery.min.js"></script>
+	<script src="./services_files/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="./services_files/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="./services_files/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="./services_files/slick.min.js"></script>
+	<script type="text/javascript" src="./services_files/app.js"></script>
+
+
+</body></html>

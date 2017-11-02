@@ -1,0 +1,43 @@
+{% extends "_layout" %}
+{% set title = "Cedar Tree Removal" %}
+{% set blockImage = {
+ mode: 'crop',
+ width: 440,
+ position: 'top-center'
+} %}
+
+{% block content %}
+  <div class="page">
+    <div class="col-md-12 page-body">
+        <div class="logo-div">
+            <img class="logo" src="{{ siteLogo.logo.first().url }}">
+        </div>
+    </div>
+    <div class="col-md-12">
+    </div>
+    <div class="col-md-6 left service-body">
+      <h1 class="service-title left">{{entry.title}}</h1><br>
+      <p>{{ entry.body }}</p>
+    </div>
+    <div class="col-md-5 col-sm-12 service-slider slide">
+    {% include '/partials/service-slider.twig' %}
+    </div>
+
+
+
+<!--     <div class="col-md-4">
+    </div>
+    <div class="col-md-4 service-images slide">
+        or slider here
+    </div>
+    <div class="col-md-4">
+    </div> -->
+        {% if entry.videoUrl | length %}
+            {% for vid in entry.videoUrl %}
+                <div class="col-md-12 video">
+                    <br><br>{{ vid.embedIframe | raw }}<br><br>
+                </div>
+            {% endfor %}
+        {% endif %}
+  </div>
+{% endblock %}

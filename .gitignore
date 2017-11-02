@@ -1,0 +1,14 @@
+Thumbs.db
+*.DS_Store
+venv
+.DS_Store?
+.Trashes
+*.pyc
+.idea
+bin/bundle
+
+node_modules/
+tmp/
+.env.sh
+web/public/uploads/_*/
+web/public/uploads/_*/*.*

@@ -1,0 +1,57 @@
+{% extends "_layout" %}
+
+{% block content %}
+{% set thumb = {
+    mode: 'crop',
+    width: 1300,
+    height: 750,
+    position: 'top-center'
+} %}
+<div class="page-content">
+
+{% include 'page-parts/_hero.html' %}
+
+  <div id="home-body" class="col-md-12">
+    <h1 class="body-title">TRJ Ranch</h1>
+    <div class="col-md-3">
+    </div>
+    <div class="body col-md-6">
+    <h3 class="body-subtitle">{{ entry.homeHeading }}</h3>
+        <p> {{entry.body}} </p>
+        <a href="/about/about-us"><p class="right">Learn more about who we are ></p></a>
+    </div>
+    <div class="col-md-3">
+    </div>
+    <div class="col-md-12">
+        <hr>
+    </div>
+    
+    {% include 'partials/services.html' %}
+    {% set transformedAbout = craft.imager.transformImage(entry.aboutUsHomeImage.first.url, { width: 375, height: 250 }) %}
+    {% set transformedCedar = craft.imager.transformImage(entry.cedarTreeProblemHomeImage.first.url, { width: 375, height: 250 }) %}
+    {% set transformedBenefits = craft.imager.transformImage(entry.benefitsHomeImage.first.url(), { width: 375, height: 250 }) %}
+
+    <div class="col-md-12 section">
+    <h1 class="body-title">Learn More</h1>
+        <div class="col-md-4 col-sm-12 feature-img sub-carousel">
+            <a href="about/about-us"><img class="feature-full" src="{{transformedAbout}}"></a>
+            <!-- <img class="after feature-full" src="assets/images/cleared4.jpg"> -->
+            <a class="service-link"  href="about/about-us"><h4>About Us</h4></a>
+        </div>
+        <div class="col-md-4 col-sm-12 feature-img sub-carousel">
+            <a href="about/the-cedar-tree-problem"><img class="feature-full" src="{{transformedCedar}}"></a>
+            <a class="service-link"  href="about/the-cedar-tree-problem"><h4>The Cedar Tree Problem</h4></a>
+        </div>
+        <div class="col-md-4 col-sm-12 feature-img sub-carousel">
+            <a href="about/benefits"><img class="feature-full" src="{{ transformedBenefits }}"></a>
+            <a class="service-link"  href="about/benefits"><h4>Benefits</h4></a>
+        </div>
+
+    </div>
+</div>
+</div>
+
+{% endblock %}
+
+
+

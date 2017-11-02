@@ -1,0 +1,16 @@
+<div class="spanner">
+  <div class="hero">
+    <div class="hero-image" aria-live="polite" >
+      {% if entry.heroImage | length %}
+        <div class="full-width hero-center" style="background-image: url('{{ entry.heroImage.first.getUrl({
+          mode: 'crop',
+          width: 1400,
+          height: 550,
+          quality: 100,
+          position: 'top-center'
+        }) }}')">
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</div>

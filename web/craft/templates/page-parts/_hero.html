@@ -1,0 +1,13 @@
+<div class="title hero-overlay">
+    <h1 class="">RECLAIM YOUR LAND</h1><br>
+    <a class="" href="#home-body"><i class="title-fa fa fa-angle-double-down fa-3x center" aria-hidden="true"></i></a>
+</div>
+
+<div class="carousel">
+    {% for img in carousel.carouselImages %}
+        <div class="car-img">
+            <!-- <div style="background-image: url('{{ img.getUrl }}')"></div> -->
+            <img src="{{ img.getUrl() }}">
+        </div>
+    {% endfor %}
+</div>

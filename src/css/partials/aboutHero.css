@@ -1,0 +1,46 @@
+.spanner > div.hero{
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-image {
+  background-size: cover;
+  width: 100%;
+  /*// max-height: 400px;*/
+  float: left;
+  background-position: center center;
+  background-repeat: none;
+  position: relative;
+}
+
+.carousel__item-slim {
+  background-size: cover;
+  width: 100%;
+  /*// max-height: 400px;*/
+  float: left;
+  background-position: center center;
+  position: relative;
+  height: 30em;
+}
+
+.hero-center{
+  height: 400px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+@media (--tablet-down){
+  .hero-text{
+    top: 30%;
+  }
+}
+
+@media (min-width: 1500px){
+  .hero-center{
+    height: 550px;
+  }
+}
