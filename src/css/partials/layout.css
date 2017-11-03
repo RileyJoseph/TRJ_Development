@@ -14,6 +14,10 @@ html, body {
   padding-bottom: 20px;
 }
 
+.offwhite{
+  color: #efefef;
+}
+
 @media(--monitor-up){
   .section{
     padding-bottom: 6em;

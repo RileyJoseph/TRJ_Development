@@ -4,13 +4,11 @@
   position: 'top-center'
 } %}
 
-
-
 <div class="spanner">
   <section class="carousel">
       <div class="carousel__items carousel-items" aria-live="polite">
         {% for slide in entry.serviceImages %}
-        {% set slideImg = craft.imager.transformImage(slide.url, { width: 375, height: 250 }) %}
+        {% set slideImg = craft.imager.transformImage(slide.url, { width: 500}) %}
           <div class="carousel-item">
             <div class="carousel__item-slim">
               <div class="service-center" style="background-image: url('{{ slideImg }}');"></div>

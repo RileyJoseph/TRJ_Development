@@ -1415,7 +1415,7 @@ template {
 
 footer{
     background-color: black;
-    color: rgba(255,255,255,.9);
+    color: #efefef;
     display: inline-block;
 }
 
@@ -1445,7 +1445,7 @@ footer p{
 }
 
 .contact{
-    color: white;
+    color: #efefef;
 }
 
 .contact ul{
@@ -1461,7 +1461,7 @@ footer p{
     letter-spacing: 3px;
     line-height: 42px;
     margin-bottom: .5rem;
-    color: white;
+    color: #efefef;
     font-weight: 400;
     width: 100%;
     text-align: center;
@@ -1525,11 +1525,6 @@ footer p{
     .social-icon{
         padding: 0px;
     }
-}
-
-.carousel{
-  max-width: 100%;
-  max-height: 100%;
 }
 
 .car-img{
@@ -1613,6 +1608,10 @@ html, body {
 
 .section{
   padding-bottom: 20px;
+}
+
+.offwhite{
+  color: #efefef;
 }
 
 @media(min-width:1500px){
@@ -1813,6 +1812,8 @@ img {
   padding: 0px 0px 50px 0px;
   line-height: 25px;
   margin-top: 0em;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .service-center{
@@ -1997,6 +1998,112 @@ body{
 
 .slider-img img{
   width: 100%;
+}
+
+.slick-list{
+  /*height: 330px;*/
+}
+
+.service__carousel {
+  margin: 0;
+  z-index: 1;
+  text-align: center;
+  position: relative;
+  background-color: rgba(86, 86, 86, .7);
+}
+
+/*(linear-gradient(180deg, rgba(40, 40, 40, .8) 0%, rgba(40, 40, 40, 0.8) 100%));*/
+
+.service__carousel section {
+  padding: 2em 1em;
+}
+
+.service__carousel ul {
+  margin: 0;
+  padding: 0;
+}
+
+.service__carousel .service__carousel__wrapper {
+  height: 100%;
+  max-height: 20em;
+  margin: 1em;
+}
+
+.service__carousel .service__carousel__wrapper img {
+  display: block;
+  max-height: 20em;
+}
+
+.service__carousel::after {
+  content: '';
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.service__carousel .service__carousel__arrows {
+  margin-top: 1em;
+}
+
+.service__carousel .service__carousel__arrows__prev, .service__carousel .service__carousel__arrows__next {
+  text-indent: -999em;
+
+  /*@include appearance(none);*/
+  background-color: transparent;
+  border: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 2em;
+  width: 2em;
+  opacity:.8;
+}
+
+.service__carousel .service__carousel__arrows__prev::after, .service__carousel .service__carousel__arrows__next::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2em;
+  width: 2em;
+  background-size: contain;
+}
+
+.service__carousel .service__carousel__arrows__prev:focus, .service__carousel .service__carousel__arrows__next:focus {
+  border: none;
+  outline: none;
+}
+
+.service__carousel .service__carousel__arrows__prev span, .service__carousel .service__carousel__arrows__next span {
+
+  /*@include accessible_hidden;*/
+}
+
+.service__carousel .service__carousel__arrows__prev {
+  right: 5em;
+}
+
+.service__carousel .service__carousel__arrows__prev::after {
+  content: "";
+  background-image: url('/assets/images/left-arrow.svg');
+}
+
+.service__carousel .service__carousel__arrows__next {
+  left: 5em;
+}
+
+.service__carousel .service__carousel__arrows__next::after {
+  content: "";
+  background-image: url('/assets/images/right-arrow.svg');
+}
+
+@media screen and (max-width: 770px) { 
+  .service__carousel {
+    background-color: transparent;
+  }
 }
 
 /*CSS Variable declarations*/

@@ -1,10 +1,15 @@
+.carousel{
+  text-align: center;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .service-slider{
   padding-top: 5em!important;
 }
 
 .spanner > section.carousel {
-  width: 100%;
-  max-width: 100%;
   padding: 0;
   position: relative;
   overflow: hidden;
@@ -23,6 +28,7 @@
 
 .service-center{
   height: 300px;
+  width: 500px;
   background-position: top center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -36,21 +42,15 @@
   list-style-type: none;
   padding: 0;
 }
+
 .carousel__item {
   background-size: cover;
   width: 100%;
-  // max-height: 400px;
   float: left;
   background-position: center center;
   position:relative;
   @include breakpoint($zero-to-small) {
     width: auto;
-  }
-  @include breakpoint($medium-to-large) {
-    // max-height: 450px;
-  }
-  @include breakpoint($large-plus) {
-    // max-height: 500px;
   }
   &:before {
     z-index:1;
@@ -60,31 +60,15 @@
     position:absolute;
     top:0;
     left:0;
-    @include background(linear-gradient(180deg, rgba(40, 40, 40, 0) 55%, rgba(40, 40, 40, 0.8) 100%));
-  }
-  @include breakpoint($zero-to-small) {
-    height: 20em;
-  }
-  @include breakpoint($small-to-medium) {
-    height: 28em;
-  }
-  @include breakpoint($medium-to-large) {
-    // wit
-    height: 32em;
-  }
-  @include breakpoint($large-plus) {
-    // test
-    height: 36em;
+   /* @include background(linear-gradient(180deg, rgba(40, 40, 40, 0) 55%, rgba(40, 40, 40, 0.8) 100%));*/
   }
 }
 .carousel__item-slim {
   background-size: cover;
   width: 100%;
-  // max-height: 400px;
   float: left;
   background-position: center center;
   position:relative;
-  height: 30em;
   @include breakpoint($zero-to-small) {
     width: 100%;
   }

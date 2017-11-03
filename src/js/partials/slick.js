@@ -7,9 +7,6 @@ export default function slider() {
     autoplay: true,
     autoplaySpeed: 4000,
     slide: 'span',
-    dots: true,
-    arrows: true,
-    prevArrow: '.slide_prev',
-    nextArrow: '.slide_next',
+    dots: true
   });
 }

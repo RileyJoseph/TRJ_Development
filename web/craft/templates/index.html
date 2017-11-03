@@ -27,9 +27,9 @@
     </div>
     
     {% include 'partials/services.html' %}
-    {% set transformedAbout = craft.imager.transformImage(entry.aboutUsHomeImage.first.url, { width: 375, height: 250 }) %}
-    {% set transformedCedar = craft.imager.transformImage(entry.cedarTreeProblemHomeImage.first.url, { width: 375, height: 250 }) %}
-    {% set transformedBenefits = craft.imager.transformImage(entry.benefitsHomeImage.first.url(), { width: 375, height: 250 }) %}
+    {% set transformedAbout = craft.imager.transformImage(entry.aboutUsHomeImage.first.url, { width: 375, height: 250, jpegQuality: 100 }) %}
+    {% set transformedCedar = craft.imager.transformImage(entry.cedarTreeProblemHomeImage.first.url, { width: 375, height: 250, jpegQuality: 100 }) %}
+    {% set transformedBenefits = craft.imager.transformImage(entry.benefitsHomeImage.first.url(), { width: 375, height: 250, jpegQuality: 100 }) %}
 
     <div class="col-md-12 section">
     <h1 class="body-title">Learn More</h1>

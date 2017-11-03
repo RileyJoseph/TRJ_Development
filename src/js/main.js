@@ -12,9 +12,11 @@ if (tld == 'dev') {
 import './partials/jquery-global.js';
 // import initNav from './partials/navigation.js';
 import slider from './partials/slick.js';
+import serviceSlider from './partials/service-slider.js';
+
 
 // Invoke imported funtions inside this IIFE
 (function() {
-  // initNav();
   slider();
+  serviceSlider();
 })();
