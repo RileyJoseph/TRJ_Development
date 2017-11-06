@@ -44,6 +44,11 @@
                     <br><br>{{ vid.embedIframe | raw }}<br><br>
                 </div>
             {% endfor %}
+            <div class="body__video">
+                {{ entry.videoUrl |videoEmbed({ byline: 1, autoplay: 0, height: "320px" })}}
+            </div>
         {% endif %}
+
+
   </div>
 {% endblock %}

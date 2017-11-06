@@ -1851,7 +1851,7 @@ img {
 }
 
 .feature-img{
-  width: 32.33%;
+  width: 33.32%;
   height: 260px;
   display: inline-block;
 
@@ -1863,6 +1863,31 @@ img {
     width: 100%;
     height: auto;
   }
+}
+
+.body__video{
+    width:60%;
+    margin: 2em auto;
+    position:relative;
+    height:0;
+    padding-bottom:34%;
+    clear:both;
+}
+
+@media(max-width: 741px) {
+
+  .body__video{
+    width: 88%;
+    padding-bottom: 50%;
+  }
+}
+
+.body__video iframe {
+  position:absolute;
+  top:0;
+  left:0;
+  height:100% !important;
+  width:100% !important;
 }
 
 body{
