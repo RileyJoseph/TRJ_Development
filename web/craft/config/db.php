@@ -9,21 +9,21 @@
 
 return array(
 
-	// The database server name or IP address. Usually this is 'localhost' or '127.0.0.1'.
-	'server' => 'localhost',
-
-	// The name of the database to select.
-	'database' => 'trj_craft',
-
-	// The database username to connect with.
-	'user' => 'root',
-
-	// The database password to connect with.
-	'password' => 'root',
-
-	// The prefix to use when naming tables. This can be no more than 5 characters.
 	'tablePrefix' => 'craft',
-
+    '*' => array(
+        'server' => 'localhost',
+        'tablePrefix' => 'craft',
+        'user' => 'root',
+        'password' => 'root',
+        'database' => 'trj_craft'
+    ),
+    '.com' => array(
+        'server' => '127.0.0.1',
+        'tablePrefix' => 'craft',
+        'user' => 'oklaho99_craft',
+        'password' => 'uR0PNAq*+rqS',
+        'database' => 'oklaho99_craft'
+    ),
 	'.dev' => array(
 		'server' => 'localhost',
 		'tablePrefix' => 'craft',

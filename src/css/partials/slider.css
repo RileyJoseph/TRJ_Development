@@ -20,7 +20,7 @@
   z-index: 1;
   text-align: center;
   position: relative;
-  background-color: rgba(86, 86, 86, .7);
+  background-color: rgba(255, 255, 255, .2);
   /*(linear-gradient(180deg, rgba(40, 40, 40, .8) 0%, rgba(40, 40, 40, 0.8) 100%));*/
   section {
     padding: 2em 1em;
