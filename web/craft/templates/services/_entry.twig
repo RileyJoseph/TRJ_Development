@@ -21,6 +21,8 @@
     </div>
     <div class="col-md-3"></div>
 
+
+{% if entry.serviceImages | length %}
 <div class="col-sm-12">
     <div class="service__carousel print_hidden" style="background-image:url({{ craft.config.oaapi }}/{{ service.fields.categories[0].cover_photo }});">
       <section>
@@ -37,7 +39,7 @@
       </section>
     </div>
 </div>
-
+{% endif %}
         {% if entry.videoUrl | length %}
             {% for vid in entry.videoUrl %}
                 <div class="col-md-12 video">

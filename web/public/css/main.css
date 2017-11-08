@@ -1799,7 +1799,6 @@ img {
 .page-body{
     text-align: center;
     min-height: 90%;
-    margin-left: 1em;
 }
 
 .page-body h1{
@@ -1866,6 +1865,7 @@ img {
 }
 
 .body__video{
+    padding-top: 2em;
     width:60%;
     margin: 2em auto;
     position:relative;

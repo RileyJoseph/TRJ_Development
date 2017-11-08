@@ -23,19 +23,26 @@
         </div>
     </div>
 
-        <div class="col-md-2">
+{% if entry.serviceImages | length %}
+
+    <div class="col-sm-12">
+        <div class="service__carousel print_hidden" style="background-image:url({{ craft.config.oaapi }}/{{ service.fields.categories[0].cover_photo }});">
+          <section>
+            <ul>
+              {% for slide in entry.serviceImages %}
+              {% set slideImg = craft.imager.transformImage(slide.url, { width: 500}) %}
+                <li><div class="service__carousel__wrapper"><img src="{{ slideImg }}" /></div></li>
+              {% endfor %}
+            </ul>
+            <div class="service__carousel__arrows">
+              <button type="button" class="service__carousel__arrows__prev"><span>Previous</span></button>
+              <button type="button" class="service__carousel__arrows__next"><span>Next</span></button>
+            </div>
+          </section>
         </div>
-        <div class="col-md-8 service-images service-slider">
-            {% for image in entry.serviceImages %}
-                <img class="" src="{{ image.getUrl(blockImage) }}">
-            {% endfor %}
-        </div>
-<!--         <div class="col-md-4 service-images">
-            <img class="" src="/assets/images/fd5.jpg">
-            <img class="" src="/assets/images/cleared2.jpg">
-        </div> -->
-        <div class="col-md-2">
-        </div>
+    </div>
+    {% endif %}
+
     </div>
 </div>
 {% endblock %}
