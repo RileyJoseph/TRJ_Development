@@ -32,19 +32,6 @@
             </div>
         {% endif %}
 
-
-        {% if entry.youtubeVideoUrl | length %}
-            {% for vid in entry.youtubeVideoUrl %}
-                <div class="col-md-12 video">
-                    <br><br>{{ vid.embedIframe | raw }}<br><br>
-                </div>
-            {% endfor %}
-            <div class="body__video">
-                {{ entry.youtubeVideoUrl |videoEmbed({ byline: 1, autoplay: 0, height: "320px" })}}
-            </div>
-        {% endif %}
-
-
         {% if entry.youtubeVideoUrlTwo | length %}
             {% for vid in entry.youtubeVideoUrlTwo %}
                 <div class="col-md-12 video">
@@ -65,6 +52,18 @@
             {% endfor %}
             <div class="body__video">
                 {{ entry.youtubeVideoUrlThree |videoEmbed({ byline: 1, autoplay: 0, height: "320px" })}}
+            </div>
+        {% endif %}
+
+        
+        {% if entry.youtubeVideoUrlFour | length %}
+            {% for vid in entry.youtubeVideoUrlFour %}
+                <div class="col-md-12 video">
+                    <br><br>{{ vid.embedIframe | raw }}<br><br>
+                </div>
+            {% endfor %}
+            <div class="body__video">
+                {{ entry.youtubeVideoUrlFour |videoEmbed({ byline: 1, autoplay: 0, height: "320px" })}}
             </div>
         {% endif %}
 
