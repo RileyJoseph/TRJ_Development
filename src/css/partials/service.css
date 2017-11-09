@@ -17,6 +17,9 @@
   margin-right: auto;
 }
 
+.slick-slide{
+  outline: none;
+}
 
 .service-center{
   height: 300px;
