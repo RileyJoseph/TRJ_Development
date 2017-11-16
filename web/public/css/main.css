@@ -1508,10 +1508,10 @@ footer p{
 }
 
 @media screen and (max-width: 650px) { 
-    .footer-left{
+    .footer-center{
         display: none;
     }
-    .footer-center{
+    .footer-left{
         width: 49%;
         float: left;
         text-align: left;
@@ -1519,7 +1519,7 @@ footer p{
 }
 
 @media screen and (max-width: 450px) { 
-    .footer-center{
+    .footer-left{
         width: 40%;
     }
     .social-icon{
