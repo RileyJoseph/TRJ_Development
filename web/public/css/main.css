@@ -1516,11 +1516,19 @@ footer p{
         float: left;
         text-align: left;
     }
+    .social--youtube{
+      width: .75em;
+      height: .75em;
+    }
+    .social--facebook{
+      width: .75em;
+      height: .75em;
+    }
 }
 
 @media screen and (max-width: 450px) { 
     .footer-left{
-        width: 40%;
+        width: 50%;
     }
     .social-icon{
         padding: 0px;
